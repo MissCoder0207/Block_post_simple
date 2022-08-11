@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lady_First_Blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<header>
+    <h1><a href="{% url 'home'%}">Lady_First_Blog</a></h1>
+</header>
+<div>
+    {% block content%}
+    {% endblock content%}
+</div>
+<footer>
+    <h2><a href="{% url 'post_new' %}">Yangi post qo'shish</a></h2>
+</footer>
+
+</body>
+</html>
